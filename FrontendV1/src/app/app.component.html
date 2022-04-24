@@ -1,0 +1,28 @@
+<nav class="navbar">
+  <ul>
+    <!-- <li id="logo">
+      <a routerLink="home" routerLinkActive="active" class="nav-link"><span class="material-icons">
+          sticky_note_2
+        </span></a>
+    </li> -->
+    <!-- <li><a class="nav-link">Kaaj</a></li> -->
+    <!-- <li><img src="../assets/MicrosoftTeams-image (1).png" style= "width: 50%; height: 50%;" alt=""></li> -->
+    <li id="list_heading">
+      <a routerLink="list" routerLinkActive="active" class="nav-link">Task List</a>
+    </li>
+    <li>
+      <a routerLink="add" routerLinkActive="active" class="nav-link">Add Task</a>
+    </li>
+    <!-- <li>
+      <a routerLink="add" routerLinkActive="active" class="nav-link">About</a>
+    </li> -->
+    <div class="exit"><a routerLink="home" routerLinkActive="active" class="nav-link">
+        <span class="material-icons">
+          home
+        </span></a></div>
+  </ul>
+</nav>
+
+<a routerLink="home" routerLinkActive="active"><img class="logo" src="../assets/MicrosoftTeams-image (1).png" alt=""></a>
+
+<router-outlet></router-outlet>

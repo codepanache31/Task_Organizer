@@ -1,0 +1,69 @@
+
+.navbar{
+    height: 5rem;
+    background-color: #df7705;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin-left: 10rem;
+}
+
+.navbar ul li {
+    margin: -1.5rem -2.1rem;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+}
+
+.navbar ul li a {
+    font-size: 2rem;
+    color: white;
+    /* margin: 0.5rem 0.5rem; */
+    margin-left: 0.5rem;
+}
+
+.navbar ul li a:hover{
+    color: rgb(111, 109, 109);
+}
+
+#list_heading{
+    margin-left: 15rem;
+}
+
+
+.exit{
+    margin-left: 25rem;
+    margin-bottom: 3rem;
+}
+
+.exit a{
+    color: white;
+}
+
+.material-icons{
+    color: white;
+    font-size: 4rem;
+}
+
+#logo{
+    margin-bottom: 0.7rem;
+}
+
+/* .image{
+    background: url('../assets/try2.jpg');
+} */
+
+/* .site_name{
+    margin-bottom: 20rem;
+} */
+
+.logo{
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    top: -5rem;
+    left: 3rem;
+}

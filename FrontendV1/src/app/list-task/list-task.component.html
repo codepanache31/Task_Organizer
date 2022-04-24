@@ -1,0 +1,68 @@
+
+<!-- <div style="margin-top: 3rem; text-align: center;" ><h2>Task List</h2></div> -->
+
+<div style="margin: 10px; margin-top: -2rem;" class="bg">
+<table class="table table-active" style="text-align: center;">
+    <thead>
+        <tr class="heads">
+            <!-- <th>Serial No.</th> -->
+            <th></th>
+            <th class="names">Task</th>
+            <th class="names">Deadline</th>
+            <th class="names">Priority</th>
+            <th class="names">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr class="rows" *ngFor = "let task of taskArr; index as i">
+            <!-- <td class="row_names">
+                <div class="sb-checkbox">
+                    <label class="checkbox">
+                        <input type="checkbox" class= "checkBox" (click)= "onCheckBox(task.id)">
+                    </label>
+                </div>
+            </td> -->
+            
+            <td class="row_names">
+                <!-- <button [ngClass]= "getClass()" (click)= "toggle()"></button> -->
+                <button [class]= "isClicked[i]?'clicked':'unclicked'" (click)= "myClick(i)"></button>
+                
+            </td>
+
+
+            <td class="row_names">
+                <span [class]= "isClicked[i]?'strike':'noStrike'">{{task.taskName}}</span>
+            </td>
+            <td class="row_names">
+                <span [class]= "isClicked[i]?'strike':'noStrike'">{{task.deadline}}</span>
+            </td>
+            <td class="row_names" *ngIf = "task.priority== 'High'">
+                <span [class]= "isClicked[i]?'strike high':'noStrike high'">{{task.priority}}</span></td>
+            <td class="row_names" *ngIf = "task.priority== 'Medium'">
+                <span [class]= "isClicked[i]?'strike medium':'noStrike medium'">{{task.priority}}</span></td>
+            <td class="row_names" *ngIf = "task.priority== 'Low'">
+                <span [class]= "isClicked[i]?'strike low':'noStrike low'">{{task.priority}}</span></td>
+            <td>
+                <button (click)= "updateTask(task.id)" class="btn1" id="update">Update</button>
+                <button (click)= "deleteTask(task.id)" class="btn2" id="delete">Delete</button>
+            </td>
+            
+            <!-- <td class="row_names"><ng-container *ngIf= "!isChecked && checkId!=task.id else myElse"><span class="val">{{task.taskName}}</span></ng-container>
+                <ng-template #myElse><span class="strike">{{task.taskName}}</span></ng-template>
+            </td>
+            <td class="row_names"><ng-container *ngIf= "!isChecked && checkId!=task.id else myElse2">{{task.deadline}}</ng-container>
+                <ng-template #myElse2><span class="strike">{{task.deadline}}</span></ng-template>
+            </td>
+            <td class="row_names"><ng-container *ngIf= "!isChecked && checkId!=task.id else myElse3">{{task.priority}}</ng-container>
+                <ng-template #myElse3><span class="strike">{{task.priority}}</span></ng-template>
+            </td>
+            <td>
+                <button (click)= "updateTask(task.id)" class="btn1" id="update">Update</button>
+                <button (click)= "deleteTask(task.id)" class="btn2" id="delete">Delete</button>
+            </td> -->
+        </tr>
+    </tbody>
+</table>
+</div>
+<div class="image"></div>

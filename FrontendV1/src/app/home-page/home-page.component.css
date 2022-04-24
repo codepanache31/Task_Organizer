@@ -1,0 +1,62 @@
+h1{
+    font-size: 80px
+}
+
+.home {
+    min-height: 80vh;
+    padding: 15rem 7%;
+    padding-top: 0rem;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background: url('../../assets/MicrosoftTeams-image.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    top: -5rem;
+}
+
+.btn {
+    padding: .7rem 3rem;
+    font-size: 2rem;
+    color: white;
+    background-color: #4b596c;
+    border-radius: 3rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+    z-index: 0;
+    font-weight: 600;
+}
+
+.btn:hover{
+    background-color: #909293;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #df7705;
+    text-align: center;
+    color: white;
+}
+
+.heading{
+    color: #4b596c;
+    /* text-decoration: underline; */
+    text-decoration-color: white;
+    /* font-family: 'Anybody', cursive; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+
+
